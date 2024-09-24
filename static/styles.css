@@ -1,0 +1,116 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fffdea;
+    color: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: #fffdea;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+    bottom: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a grid de quadros */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quadro-item {
+    flex: 1 1 calc(33.3% - 40px); /* 3 quadros por linha com espaço */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.quadro-item img {
+    max-height: 70%;
+    width: auto;
+    height: auto;
+}
+
+.quadro-item h3 {
+    margin: 10px 0;
+}
+
+.quadros-titulo {
+    margin-left: 95px;
+    padding: 20px 0px;
+    font-size: 2em;
+}
+
+.main-content {
+    background-image: url('../static/images/home.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 80vh;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.about-content {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 95px;
+}
+
+.about-text {
+    width: 50%;
+    align-self: center;
+}
+
+.about-image {
+    width: 45%;
+    img {
+        height: 75vh;
+    }
+}
