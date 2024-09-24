@@ -19,11 +19,6 @@ ecobags = [
 def index():
     return render_template('index.html')
 
-#@app.route('/quadro/<int:quadro_id>')
-#def quadro(quadro_id):
-#    quadro_info = next((q for q in quadros if q['id'] == quadro_id), None)
-#    return render_template('quadro.html', quadro=quadro_info)
-
 @app.route('/lista_quadros')
 def lista_quadros():
     return render_template('lista_quadros.html', quadros=quadros)
