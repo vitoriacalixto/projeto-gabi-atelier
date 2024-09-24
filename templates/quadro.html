@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="quadros-titulo">{{ quadro.nome }}</div>
+    <img src="{{ url_for('static', filename='images/' + quadro.imagem) }}" alt="{{ quadro.nome }}" width="500" height="500">
+    <p>{{ quadro.descricao }}</p>
+{% endblock %}

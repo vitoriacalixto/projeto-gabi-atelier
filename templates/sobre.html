@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="about-content">
+        <div class="about-text">
+            Oi, me chamo Gabriella Fonseca, o Gabi Atelier é o lugar onde posto meus quadrinhos tão queridos e imperfeitos, e deixo registrada minha evolução e minha paz transformada em arte.
+            Ao encomendar uma arte, pode escolher o desenho e cores da sua preferência!
+        </br>
+        </br>
+            ✨Estou aceitando encomendas, naquele precinho que todo mundo gosta
+        </br>
+            ✨Também aceito críticas construtivas, ideias e incentivo! 😉
+        </br>
+            ✨Espero que vocês gostem
+        </br>
+        </br>
+            Para mais informações e orçamentos visite meu instagram.
+        </br>
+        <a target="_blank" href="https://www.instagram.com/gabi_atelier_">@gabi_atelier_</a>
+
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="sobre">
+        </div>
+    </div>
+{% endblock %}

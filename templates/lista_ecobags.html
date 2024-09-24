@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="quadros-titulo">Nossas Ecobags</div>
+    <div class="grid-container">
+        {% for ecobag in ecobags %}
+            <div class="quadro-item">
+                <img src="{{ url_for('static', filename='images/' + ecobag.imagem) }}" alt="ecobag">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

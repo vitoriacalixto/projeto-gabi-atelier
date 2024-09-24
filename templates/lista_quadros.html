@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="quadros-titulo">Nossos Quadros</div>
+    <div class="grid-container">
+        {% for quadro in quadros %}
+            <div class="quadro-item">
+                <img src="{{ url_for('static', filename='images/' + quadro.imagem) }}" alt="quadro">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
